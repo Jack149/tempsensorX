@@ -9,6 +9,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 let temp = 0
 let F_Temp = 0
 radio.setGroup(1)
+radio.setTransmitPower(7)
 basic.forever(function () {
     temp = input.temperature()
     CtoF(1, 1)
